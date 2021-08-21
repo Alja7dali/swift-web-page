@@ -8,6 +8,7 @@ let package = Package(
     .library(name: "Html", targets: ["Html"]),
     .library(name: "Css", targets: ["Css"]),
     .library(name: "HtmlCssSupport", targets: ["HtmlCssSupport"]),
+    .library(name: "Swep", targets: ["Swep"]),
   ],
   targets: [
     .target(name: "Core", dependencies: []),

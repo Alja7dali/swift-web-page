@@ -201,12 +201,13 @@ Behind the scenes **Swep** is following the **Protocol-Oriented-Programming** (*
 
 ## FAQ
 
-### Can I use this with existing Swift web frameworks like Kitura and Vapor?
+### Can I use this with existing Swift web frameworks like Kitura, Vapor, and Perfect?
 
-Yes! We even provide plug-in libraries that reduce the friction of using this library with Kitura and Vapor. Find out more information at the following repos:
+Yes! We even provide plug-in libraries that reduce the friction of using this library with Kitura, Vapor, and Perfect. Find out more information at the following repos:
 
-- [swift-web-page-kitura](https://github.com/alja7dali/swift-web-page-kitura)
-- [swift-web-page-vapor](https://github.com/alja7dali/swift-web-page-vapor)
+- [~~swift-web-page-kitura~~](https://github.com/alja7dali/swift-web-page-kitura) (soon)
+- [~~swift-web-page-vapor~~](https://github.com/alja7dali/swift-web-page-vapor) (soon)
+- [~~swift-web-page-perfect~~](https://github.com/alja7dali/swift-web-page-perfect) (soon)
  
 ### Why would I use this over a templating language?
 
@@ -384,7 +385,7 @@ page.render(renderMode)
 
 ### Swift Package Manager (SPM)
 
-If you want to use swift-web-page in a project that uses [SPM](https://swift.org/package-manager/), it's as simple as adding a `dependencies` clause to your `Package.swift`:
+If you want to use *swift-web-page* in a project that uses [SPM](https://swift.org/package-manager/), it's as simple as adding a `dependencies` clause to your `Package.swift`:
 
 ``` swift
 dependencies: [
@@ -394,6 +395,13 @@ dependencies: [
 
 From there you can add `Swep` as target dependencies.
 
+``` swift
+let Swep: Target.Dependency = .product(name: "Swep", package: "swift-web-page")
+...
+targets: [
+  .target(name: "yourProject", dependencies: [Swep]),
+]
+```
 
 ## License
 
