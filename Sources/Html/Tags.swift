@@ -1454,6 +1454,10 @@ public struct Script<Content: HtmlNode>: Tag {
   public init(_ c: String) where Content == Raw {
     attributes = []; content = Raw(c)
   }
+
+  public init() where Content == Empty {
+    attributes = []; content = Empty()
+  }
 }
 
 /// ------------------------------------------------------------------------ ///
