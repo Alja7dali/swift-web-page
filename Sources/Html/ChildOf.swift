@@ -369,6 +369,12 @@ extension Optional:    ChildOfHead where Wrapped: ChildOfHead {}
 //extension Head: ChildOfHtml {}
 //extension Body: ChildOfHtml {}
 
+public protocol VariationOfHead {}
+extension Head: VariationOfHead {}
+
+public protocol VariationOfBody {}
+extension Body: VariationOfBody {}
+
 /// ---------------------- ///
 
 public protocol ChildOfMap {}

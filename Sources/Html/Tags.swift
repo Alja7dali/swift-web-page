@@ -790,7 +790,7 @@ public struct Html<Content: HtmlNode>: Tag {
     attributes = []; content = c()
   }
 
-  public init<A, B>(@HtmlNodeBuilder _ c: () -> Content) where Content == Tuple<(Head<A>, Body<B>)> {
+  public init<A: VariationOfHead, B: VariationOfBody>(@HtmlNodeBuilder _ c: () -> Content) where Content == Tuple<(A, B)> {
     attributes = []; content = c()
   }
 }
