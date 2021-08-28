@@ -301,11 +301,11 @@ let page = document {
 
 Checking out the type of the document..
 ```swift
-type(of: page)
+type(of: page.content)
 ```
 
 ```bash
-Document<Html<Tuple<(Head<Tuple<(Title<Text>, Style<Stylesheet>)>>, Body<Tuple<(H1<Text>, Hr, P<Tuple<(Strong<Text>, Text)>>, P<Tuple<(Text, Strong<Text>)>>, Ul<Tuple<(Li<Text>, Li<Text>, Array<Optional<Li<Text>>>)>>, Blockquote<Text>)>>)>>>
+Html<Tuple<(Head<Tuple<(Title<Text>, Style<Stylesheet>)>>, Body<Tuple<(H1<Text>, Hr, P<Tuple<(Strong<Text>, Text)>>, P<Tuple<(Text, Strong<Text>)>>, Ul<Tuple<(Li<Text>, Li<Text>, Array<Optional<Li<Text>>>)>>, Blockquote<Text>)>>)>>
 ```
 
 Rendering out the document..
