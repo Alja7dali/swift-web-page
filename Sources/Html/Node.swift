@@ -6,16 +6,16 @@ extension Empty: HtmlNode {}
 extension Optional: HtmlNode where Wrapped: HtmlNode {}
 extension Tuple: HtmlNode {}
 
-public struct Document<Content: HtmlNode>: HtmlNode {
+public struct Document: HtmlNode {
   public let type: Optional<String>
 
-  public let content: Content
+  public let content: HtmlNode
 
-  public init<A>(type t: String, @HtmlNodeBuilder _ c: () -> Content) where Content == Html<A> {
+  public init<A>(type t: String, @HtmlNodeBuilder _ c: () -> Html<A>) {
     type = t; content = c()
   }
 
-  public init<A>(@HtmlNodeBuilder _ c: () -> Content) where Content == Html<A> {
+  public init<A>(@HtmlNodeBuilder _ c: () -> Html<A>) {
     type = .none; content = c()
   }
 }
