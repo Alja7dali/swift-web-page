@@ -201,12 +201,12 @@ Behind the scenes **Swep** is following the **Protocol-Oriented-Programming** (*
 
 ## FAQ
 
-### Can I use this with existing Swift web frameworks like Kitura, Vapor, and Perfect?
+### Can I use this with existing Swift web frameworks like Vapor, Kitura, and Perfect?
 
-Yes! We even provide plug-in libraries that reduce the friction of using this library with Kitura, Vapor, and Perfect. Find out more information at the following repos:
+Yes! We even provide plug-in libraries that reduce the friction of using this library with Vapor, Kitura, and Perfect. Find out more information at the following repos:
 
-- [~~swift-web-page-kitura~~](https://github.com/alja7dali/swift-web-page-kitura) (soon)
 - [swift-web-page-vapor](https://github.com/alja7dali/swift-web-page-vapor)
+- [swift-web-page-kitura](https://github.com/alja7dali/swift-web-page-kitura)
 - [~~swift-web-page-perfect~~](https://github.com/alja7dali/swift-web-page-perfect) (soon)
  
 ### Why would I use this over a templating language?
