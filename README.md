@@ -207,7 +207,7 @@ Yes! We even provide plug-in libraries that reduce the friction of using this li
 
 - [swift-web-page-vapor](https://github.com/alja7dali/swift-web-page-vapor)
 - [swift-web-page-kitura](https://github.com/alja7dali/swift-web-page-kitura)
-- [~~swift-web-page-perfect~~](https://github.com/alja7dali/swift-web-page-perfect) (soon)
+- [swift-web-page-perfect](https://github.com/alja7dali/swift-web-page-perfect)
  
 ### Why would I use this over a templating language?
 
