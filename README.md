@@ -11,6 +11,8 @@
 
 Swep is a Swift DSL for writing type-safe HTML/CSS in SwiftUI way.
 
+Checkout [SwepUI](https://github.com/Alja7dali/swift-web-page-ui) for SwiftUI-like encapsulation!
+
 ## Table of Contents
 
   - [Motivation](#motivation)
